@@ -2,8 +2,36 @@
 
 Materials for the paper *From sequences to variables - rethinking the relationship of sequences and outcomes* by Satu Helske, Jouni Helske and Guilherme Chihaya.
 
+In this paper, we bring forward and discuss the problems of the "traditional" use of SA clusters in regression models and compare four approaches for different types of data. We conduct a simulation study and an empirical study, demonstrating the importance of considering how sequences and an outcome are related and the need to adjust the analysis accordingly.
+
 * SocArXiv preprint:
 
 ### Repository contents
 
-* `simulation_experiment`: Codes, figures and data used in simulation experiment
+* `simulation_experiment`: Codes, figures, and data used in simulation experiment
+* `empirical_analysis`: Codes and figures for the empirical analysis
+
+### About authors
+
+**Satu Helske** is a senior researcher in sociology at the INVEST Research Flagship Center and Department of Social Research, University of Turku, Finland. She has a PhD in statistics and works at the crossroads of sociology and statistics, with a strong interest in life course research.
+
+**Jouni Helske** is a senior researcher in the Department of Mathematics and Statistics at the University of Jyväskylä, Finland, working on causal estimation problems and Bayesian inference.
+
+**Guilherme Chihaya** is a senior researcher in the Department of Geography, Umeå University, and in the Institute for Analytical Sociology, Linköping University, Sweden. His research focuses on the factors shaping residential mobility, segregation, and employment of immigrants.
+
+### Empirical data
+
+The empirical analyses in the article were conducted using R in the MONA remote access system of Statistics Sweden. The dataset comprises a sample of all residents of Sweden who turned 18 years old in 1997 and who lived continuously in the country until 2017 (*N* = 10,000). In other words, we observe all subjects from age 18 to age 38. Yearly states are coded as "Working" and "Not working" based on income and employment information from the Longitudinal Integrated Database for Health Insurance and Labour Market Studies (LISA). Other variables included in the multivariate analysis are retrieved from the Total Population Register (RTB). 
+
+We were interested in two outcome variables: (1) the probability of being in the lowest income quintile at the end of the sequence (a measure of poverty) and (2) the square root of cumulative income over the entire sequence (in 1000 SEK). Income in this case was income from wages, business, and other economic activity, including social benefits related to economic activity (such as parental leave and sick leave compensations). We also had measurements of characteristics of the individual and of their family background at the start of the sequence. These were: region of residence (Metropolitan areas, smaller cities, countryside), mother's education, fathers' education, mother's employment status, father's employment status, and sex. 
+
+### Output examples
+
+![image](https://user-images.githubusercontent.com/10557867/132669002-bd10fba9-f850-42f4-8507-363c723c0ea0.png)
+Illustration of four data types based on the strength of the clustering tendency and the type of the sequence--outcome link. The shade of the points refer to the value of a continuous outcome. In panels A and B the value of the outcome depends on the class membership (classes differentiated by shape) and the within-class variation is random, while in panels C and D the value of the outcome increases along the vertical axis. The dashed lines show a partitioning suggested by a PAM clustering algorithm.
+
+![image](https://user-images.githubusercontent.com/10557867/132668713-1316afaa-32d8-425c-9e4c-4881cc96b2e5.png)
+Average root mean square errors of predictions from 10,000 simulations with 95\% percentile intervals.
+
+![image](https://user-images.githubusercontent.com/10557867/132668925-0a94874b-3d95-4159-8527-6d70278ad4ef.png)
+Average marginal predictions, root mean squared errors, and Brier scores by estimationmethod and outcome.
