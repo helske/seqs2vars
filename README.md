@@ -11,14 +11,6 @@ In this paper, we bring forward and discuss the problems of the "traditional" us
 * `simulation_experiment`: Codes, figures, and data used in simulation experiment
 * `empirical_analysis`: Codes and figures for the empirical analysis
 
-### About authors
-
-**Satu Helske** is a senior researcher in sociology at the INVEST Research Flagship Center and Department of Social Research, University of Turku, Finland. She has a PhD in statistics and works at the crossroads of sociology and statistics, with a strong interest in life course research.
-
-**Jouni Helske** is a senior researcher in the Department of Mathematics and Statistics at the University of Jyväskylä, Finland, working on causal estimation problems and Bayesian inference.
-
-**Guilherme Chihaya** is a senior researcher in the Department of Geography, Umeå University, and in the Institute for Analytical Sociology, Linköping University, Sweden. His research focuses on the factors shaping residential mobility, segregation, and employment of immigrants.
-
 ### Empirical data
 
 The empirical analyses in the article were conducted using R in the MONA remote access system of Statistics Sweden. The dataset comprises a sample of all residents of Sweden who turned 18 years old in 1997 and who lived continuously in the country until 2017 (*N* = 10,000). In other words, we observe all subjects from age 18 to age 38. Yearly states are coded as "Working" and "Not working" based on income and employment information from the Longitudinal Integrated Database for Health Insurance and Labour Market Studies (LISA). Other variables included in the multivariate analysis are retrieved from the Total Population Register (RTB). 
