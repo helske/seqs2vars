@@ -4,7 +4,7 @@ Materials for the paper *From sequences to variables - rethinking the relationsh
 
 In this paper, we bring forward and discuss the problems of the "traditional" use of SA clusters in regression models and compare four approaches for different types of data. We conduct a simulation study and an empirical study, demonstrating the importance of considering how sequences and an outcome are related and the need to adjust the analysis accordingly.
 
-* SocArXiv preprint:
+* SocArXiv preprint: https://osf.io/preprints/socarxiv/srxag/
 
 ### Repository contents
 
