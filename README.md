@@ -22,6 +22,11 @@ We were interested in two outcome variables: (1) the probability of being in the
 ![image](https://user-images.githubusercontent.com/10557867/132669002-bd10fba9-f850-42f4-8507-363c723c0ea0.png)
 Illustration of four data types based on the strength of the clustering tendency and the type of the sequence--outcome link. The shade of the points refer to the value of a continuous outcome. In panels A and B the value of the outcome depends on the class membership (classes differentiated by shape) and the within-class variation is random, while in panels C and D the value of the outcome increases along the vertical axis. The dashed lines show a partitioning suggested by a PAM clustering algorithm.
 
+
+![image](https://user-images.githubusercontent.com/10557867/146735863-2a8a829c-9908-4e81-b8d1-220f37663336.png)
+
+Clusters of sequences simulated from three types of mixture Markov models with varying clustering tendencies (weak, reasonable, and strong). The colours refer to four simulated states.
+
 ![image](https://user-images.githubusercontent.com/10557867/132668713-1316afaa-32d8-425c-9e4c-4881cc96b2e5.png)
 Average root mean square errors of predictions from 10,000 simulations with 95\% percentile intervals.
 
