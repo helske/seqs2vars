@@ -38,8 +38,10 @@ Average marginal predictions, root mean squared errors, and Brier scores by esti
 The average ranking based on the RMSE for each method for sample sizes of 1000 and 200 show similar patterns:
 
 ![n1000](/simulations/simulation_n1000.png?raw=true "Average and 50% quantiles of the relative rank based on RMSE")
+
 ![n500](/simulations/simulation_n200.png?raw=true "Average and 50% quantiles of the relative rank based on RMSE")
 
 When the response variable is simulated from the standard normal distribution without any connection to the covariates, all methods perform equally poorly:
+
 ![noeffect](/simulations/simulation_noeffect.png?raw=true "Average and 95% quantiles of RMSE based on different sequences with no connection to response")
 
