@@ -32,3 +32,14 @@ Average root mean square errors of predictions from 10,000 simulations with 95\%
 
 ![image](https://user-images.githubusercontent.com/10557867/132668925-0a94874b-3d95-4159-8527-6d70278ad4ef.png)
 Average marginal predictions, root mean squared errors, and Brier scores by estimationmethod and outcome.
+
+### Additional analysis
+
+The average ranking based on the RMSE for each method for sample sizes of 1000 and 200 show similar patterns:
+
+![n1000](/simulations/simulation_n1000.png?raw=true "Average and 50% quantiles of the relative rank based on RMSE")
+![n500](/simulations/simulation_n200.png?raw=true "Average and 50% quantiles of the relative rank based on RMSE")
+
+When the response variable is simulated from the standard normal distribution without any connection to the covariates, all methods perform equally poorly:
+![noeffect](/simulations/simulation_noeffect.png?raw=true "Average and 95% quantiles of RMSE based on different sequences with no connection to response")
+
