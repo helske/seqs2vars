@@ -18,6 +18,7 @@ rmse <- do.call("rbind", lapply(result_files, function(i) {
   }
   n <- as.numeric(s[length(s)])
   ranks <- apply(x, 2, rank)
+  x[x==0] <- NA
   data.frame(
     variable_type = factor(type, 
       levels = c("class_pam", "class_fanny", "prob", "repr", "gc"),

@@ -39,7 +39,7 @@ simulation <- function(
     .packages = c("cluster", "TraMineR")) %dopar% {
       
       
-      rmse <- numeric(6)
+      rmse <- rep(NA, 6)
       names(rmse) <-  c("Hard classification (PAM)",
         "Hard classification (FANNY)",
         "Soft classification",
