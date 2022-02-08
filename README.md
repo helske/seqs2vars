@@ -41,7 +41,13 @@ The average ranking based on the RMSE for each method for sample sizes of 1000 a
 
 ![n500](/simulations/simulation_n200.png?raw=true "Average and 50% quantiles of the relative rank based on RMSE")
 
-When the response variable is simulated from the standard normal distribution without any connection to the covariates, all methods perform equally poorly:
+When the response variable is simulated from the standard normal distribution without any connection to the covariates, all methods perform equally poorly, as expected:
 
 ![noeffect](/simulations/simulation_noeffect.png?raw=true "Average and 95% quantiles of RMSE based on different sequences with no connection to response")
+
+Yet another alternative, instead of computing RMSE, use BIC as measure of goodness, showing similar patterns as the RMSE case (but less interpretable):
+
+![bicversion](/simulations/BIC/simulation_BIC.png?raw=true "Average and 95% quantiles of BIC values")
+
+
 
