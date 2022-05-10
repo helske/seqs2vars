@@ -1,4 +1,7 @@
+library(dplyr)
+library(ggplot2)
 # read files
+setwd("simulations")
 files <- list.files()
 result_files <- files[grep(files, 
   pattern = "^(class|prob|repr|gc).*\\.rds", perl = TRUE)]
@@ -42,9 +45,9 @@ rmse <- do.call("rbind", lapply(result_files, function(i) {
 
 p <- rmse %>%
   filter(n == 200) %>%
-  ggplot(aes(x = strength, y = avg_rank,
+  ggplot(aes(x = strength, y = mean_rmse,
     shape = estimation_method, colour = estimation_method)) +
-  geom_pointrange(aes(ymin = min_rank, ymax = max_rank), 
+  geom_pointrange(aes(ymin = lwr, ymax = upr), 
     position = position_dodge(0.6)) +
   theme_bw() + scale_y_continuous("RMSE") + 
   scale_x_discrete("Clustering tendency", labels = c("Weak",
@@ -62,9 +65,9 @@ ggsave(p, file = "simulation_n200.png")
 
 p <- rmse %>%
   filter(n == 1000) %>%
-  ggplot(aes(x = strength, y = avg_rank,
+  ggplot(aes(x = strength, y = mean_rmse,
     shape = estimation_method, colour = estimation_method)) +
-  geom_pointrange(aes(ymin = min_rank, ymax = max_rank), 
+  geom_pointrange(aes(ymin = lwr, ymax = upr), 
     position = position_dodge(0.6)) +
   theme_bw() + scale_y_continuous("RMSE") + 
   scale_x_discrete("Clustering tendency", labels = c("Weak",
