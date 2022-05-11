@@ -110,10 +110,10 @@ p <- rmse_subset %>%
   scale_shape_discrete("Estimation method") +
   facet_grid(~ variable_type,
     labeller = as_labeller(function(x) paste0("Outcome based on ", x))) +
-  theme(legend.position = "bottom")
+  theme(legend.position = "bottom", text = element_text(size = 19))
 p
-
-ggsave(p, file = "simulation.png")
+# adjust size for the paper (see also element_text above)
+ggsave(p, file = "simulation.png", width = 12, height = 8)
 
 # Null-model case
 # 
