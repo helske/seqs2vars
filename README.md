@@ -31,11 +31,13 @@ Illustration of four data types based on the strength of the clustering tendency
 
 Clusters of sequences simulated from three types of mixture Markov models with varying clustering tendencies (weak, reasonable, and strong). The colours refer to four simulated states.
 
-![image](https://user-images.githubusercontent.com/10557867/132668713-1316afaa-32d8-425c-9e4c-4881cc96b2e5.png)
+![image](simulations/simulation.png)
+
 Average root mean square errors of predictions from 10,000 simulations with 95\% percentile intervals.
 
-![image](https://user-images.githubusercontent.com/10557867/132668925-0a94874b-3d95-4159-8527-6d70278ad4ef.png)
-Average marginal predictions, root mean squared errors, and Brier scores by estimationmethod and outcome.
+![fig6](estimates_grey_ggsave.png)
+
+Average marginal predictions, root mean squared errors, and Brier scores by estimation method and outcome.
 
 ### Additional analysis
 
