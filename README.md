@@ -43,19 +43,23 @@ Average marginal predictions, root mean squared errors, and Brier scores by esti
 
 Here we show the RMSE for each method for sample sizes of 1000 and 200 using several alternative methods:
 
-![n1000](/simulations/simulation_n1000.png?raw=true "Posterior mean and 95% posterior intervals for the RMSE with sample size 1000")
+![n1000](/simulations/simulation_n1000.png)
+Posterior mean and 95% posterior intervals for the RMSE with sample size 1000.
 
-![n500](/simulations/simulation_n200.png?raw=true "Posterior mean and 95% posterior intervals for the RMSE with sample size 200")
+![n200](/simulations/simulation_n200.png)
+Posterior mean and 95% posterior intervals for the RMSE with sample size 200.
 
 The gravity center and reprsentativeness perform relatively similar, both in terms of estimation method and data generation. Data generation based on PAM and FANNY hard classification are very similar, but these estimation methods perform somewhat differently in terms of resulting RMSE.
 
 When the response variable is simulated from the standard normal distribution without any connection to the covariates, all methods perform equally poorly, as expected:
 
-![noeffect](/simulations/simulation_noeffect.png?raw=true "Average and 95% quantiles of RMSE based on different sequences with no connection to response")
+![noeffect](/simulations/simulation_noeffect.png)
+Average and 95% quantiles of RMSE based on different sequences with no connection to response.
 
 Yet another alternative, instead of computing RMSE, use BIC as measure of goodness, showing similar patterns as the RMSE case (but less interpretable):
 
-![bicversion](/simulations/BIC/simulation_BIC.png?raw=true "Posterior mean and 95% quantiles of BIC values")
+![bicversion](/simulations/BIC/simulation_BIC.png)
+Posterior mean and 95% quantiles of BIC values.
 
 
 
