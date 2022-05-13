@@ -33,21 +33,22 @@ bic <- do.call("rbind", lapply(result_files, function(i) {
     n_na = rowSums(is.na(x)))
 }))
 
-
-p <- bic %>% 
+bic %>%
   filter(estimation_method != "Pseudoclass") %>%
   ggplot(aes(x = strength, y = mean_bic,
-    shape = estimation_method)) +
+             shape = estimation_method, colour = estimation_method)) +
   geom_pointrange(aes(ymin = lwr, ymax = upr), 
-    position = position_dodge(0.6)) +
-  theme_bw() + scale_y_continuous("BIC") + 
-  scale_x_discrete("Clustering tendency", labels = c("Weak",
-    "Moderate",
-    "Strong"))+
+                  position = position_dodge(0.6)) +
+  theme_bw() + 
+  scale_y_continuous("BIC") + 
+  scale_x_discrete("Clustering tendency", 
+                   labels = c("Weak",
+                              "Moderate",
+                              "Strong")) +
   scale_shape_discrete("Estimation method") +
-  facet_wrap(~ variable_type, ncol = 1, scales = "free",
-    labeller = as_labeller(function(x) paste0("Outcome based on ", x))) +
-  theme(legend.position = "right") 
+  scale_colour_discrete("Estimation method") +
+  facet_grid(~ variable_type, labeller = 
+               as_labeller(function(x) paste0("Outcome based on\n", x))) +
+  theme(legend.position = "bottom")
 p
-
 ggsave(p, file = "simulation_BIC.png")

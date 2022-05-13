@@ -56,7 +56,7 @@ p <- rmse %>%
   scale_shape_discrete("Estimation method") +
   scale_colour_discrete("Estimation method") +
   facet_grid(~ variable_type,
-    labeller = as_labeller(function(x) paste0("Outcome based on ", x))) +
+    labeller = as_labeller(function(x) paste0("Outcome based on\n", x))) +
   theme(legend.position = "bottom")
 p
 
@@ -76,7 +76,7 @@ p <- rmse %>%
   scale_shape_discrete("Estimation method") +
   scale_colour_discrete("Estimation method") +
   facet_grid(~ variable_type,
-    labeller = as_labeller(function(x) paste0("Outcome based on ", x))) +
+    labeller = as_labeller(function(x) paste0("Outcome based on\n", x))) +
   theme(legend.position = "bottom")
 p
 
