@@ -33,7 +33,7 @@ bic <- do.call("rbind", lapply(result_files, function(i) {
     n_na = rowSums(is.na(x)))
 }))
 
-bic %>%
+p <- bic %>%
   filter(estimation_method != "Pseudoclass") %>%
   ggplot(aes(x = strength, y = mean_bic,
              shape = estimation_method, colour = estimation_method)) +
