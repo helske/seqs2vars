@@ -1,14 +1,14 @@
-## From sequences to variables - rethinking the relationship of sequences and outcomes
+## From sequences to variables: Rethinking the relationship of sequences and outcomes
 
-Materials for the paper *From sequences to variables - rethinking the relationship of sequences and outcomes* by Satu Helske, Jouni Helske and Guilherme Chihaya.
+Supplementary materials for the paper *From sequences to variables: Rethinking the relationship of sequences and outcomes* by Satu Helske, Jouni Helske and Guilherme Chihaya.
 
-Sequence analysis (SA) has gained increasing interest in social sciences for the holistic analysis of life course and other longitudinal data. The usual approach is to construct sequences, calculate dissimilarities, group similar sequences with cluster analysis, and use cluster membership as a dependent or independent variable in a regression model.
+Sequence analysis (SA) is increasingly used in the social sciences for the holistic analysis of life course and other longitudinal data. The usual approach is to construct sequences, calculate dissimilarities, group similar sequences with cluster analysis, and use cluster membership as a dependent or independent variable in a regression model. 
 
-This approach may be problematic as cluster memberships are assumed to be fixed known characteristics of the subjects in subsequent analyses. Furthermore, often it is more reasonable to assume that individual sequences are mixtures of multiple ideal types rather than equal members of some group. Failing to account for uncertain and mixed memberships may lead to wrong conclusions about the nature of the studied relationships.
+This approach may be problematic, as cluster memberships are assumed to be fixed known characteristics of the subjects in subsequent analyses. Furthermore, it is often more reasonable to assume that individual sequences are mixtures of multiple ideal types rather than equal members of some group. Failing to account for uncertain and mixed memberships may lead to wrong conclusions about the nature of the studied relationships. 
 
-In this paper, we bring forward and discuss the problems of the "traditional" use of SA clusters as variables and compare four approaches for creating explanatory variables from sequence dissimilarities using different types of data. We conduct simulation and empirical studies, demonstrating the importance of considering how sequences and outcomes are related and the need to adjust analyses accordingly. In many typical social science applications, the traditional approach is prone to result in wrong conclusions and so-called similarity-based approaches such as representativeness should be preferred.
+In the article, we bring forward and discuss the problems of the “traditional” use of SA clusters as variables and compare four approaches for creating explanatory variables from sequence dissimilarities using different types of data. We conduct simulation and empirical studies, demonstrating the importance of considering how sequences and outcomes are related and the need to adjust analyses accordingly. In many typical social science applications, the traditional approach is prone to result in wrong conclusions, and similarity-based approaches such as representativeness should be preferred.
 
-* SocArXiv preprint: https://osf.io/preprints/socarxiv/srxag/
+* Accepted to be published in Sociological Methodology. SocArXiv preprint: https://osf.io/preprints/socarxiv/srxag/
 
 ### Repository contents
 
