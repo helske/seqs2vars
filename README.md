@@ -10,12 +10,9 @@ In the article, we bring forward and discuss the problems of the â€œtraditionalâ
 
 The article is accepted to be published in Sociological Methodology. SocArXiv preprint: https://osf.io/preprints/socarxiv/srxag/
 
-### Repository contents
+The folder `simulations` contains codes, figures, and data used in simulation experiment.
 
-* `simulation_experiment`: Codes, figures, and data used in simulation experiment
-* `empirical_analysis`: Codes and figures for the empirical analysis
-
-### Empirical data
+### About the empirical data
 
 The empirical analyses in the article were conducted using R in the MONA remote access system of Statistics Sweden. The dataset comprises a sample of all residents of Sweden who turned 18 years old in 1997 and who lived continuously in the country until 2017 (*N* = 10,000). In other words, we observe all subjects from age 18 to age 38. Yearly states are coded as "Working" and "Not working" based on income and employment information from the Longitudinal Integrated Database for Health Insurance and Labour Market Studies (LISA). Other variables included in the multivariate analysis are retrieved from the Total Population Register (RTB). 
 
@@ -25,7 +22,6 @@ We were interested in two outcome variables: (1) the probability of being in the
 
 ![image](https://user-images.githubusercontent.com/10557867/132669002-bd10fba9-f850-42f4-8507-363c723c0ea0.png)
 Illustration of four data types based on the strength of the clustering tendency and the type of the sequence--outcome link. The shade of the points refer to the value of a continuous outcome. In panels A and B the value of the outcome depends on the class membership (classes differentiated by shape) and the within-class variation is random, while in panels C and D the value of the outcome increases along the vertical axis. The dashed lines show a partitioning suggested by a PAM clustering algorithm.
-
 
 ![image](https://user-images.githubusercontent.com/10557867/146735863-2a8a829c-9908-4e81-b8d1-220f37663336.png)
 
