@@ -31,7 +31,7 @@ Clusters of sequences simulated from three types of mixture Markov models with v
 
 Average root mean square errors of predictions from 10,000 simulations with 95\% percentile intervals.
 
-![fig6](estimates_grey_ggsave.png)
+![fig6](Figure_6.png)
 
 Average marginal predictions, root mean squared errors, and Brier scores by estimation method and outcome.
 
